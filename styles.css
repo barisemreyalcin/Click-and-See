@@ -55,8 +55,11 @@ body::after {
     border-radius: 1rem;
     padding: 1.5rem;
     border: 4px solid rgba(83, 96, 119, .8);
-    /* display: none; */
+    display: none;
     /* top: -20rem; */
+
+    animation-name: answer-box;
+    animation-duration: .5s;
 }
 
 .answer-img {
@@ -82,6 +85,9 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0 .5rem 0;
+}
+.buttons .prev{
+    /* visibility: hidden; */
 }
 
 .buttons .prev, .buttons .next {
@@ -112,4 +118,12 @@ img {
 .buttons .btn:active {
     color: #000;
     background-color: #fff;
+}
+
+/* Animation */
+
+@keyframes answer-box {
+    from {
+        transform: scale(.1);
+    }
 }
